@@ -1,0 +1,22 @@
+.MuiButton-root {
+  text-transform: none !important;
+}
+.MuiTab-root {
+  text-transform: none !important;
+}
+body {
+  margin: 0;
+  font-family:
+    ui-sans-serif,
+    -apple-system,
+    system-ui,
+    'Segoe UI',
+    Helvetica,
+    'Apple Color Emoji',
+    Arial,
+    sans-serif,
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

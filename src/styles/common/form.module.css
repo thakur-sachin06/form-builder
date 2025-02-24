@@ -1,0 +1,28 @@
+.input,
+.select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.input:focus:not(.error),
+.select:focus:not(.error) {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2);
+}
+
+.error {
+  border-color: #d32f2f;
+}
+
+.error:focus {
+  outline: none;
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2);
+}

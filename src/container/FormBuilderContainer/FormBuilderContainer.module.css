@@ -1,0 +1,13 @@
+.formTitleInput {
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  padding: 4px 8px;
+}
+
+.formTitleInput:hover,
+.formTitleInput:focus {
+  border-bottom: 2px solid #1976d2;
+}
