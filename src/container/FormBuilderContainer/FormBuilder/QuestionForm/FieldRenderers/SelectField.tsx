@@ -21,7 +21,7 @@ const SelectField: React.FC<SelectFieldProps> = ({
     <div className={styles.formGroup}>
       <div className={styles.rowContainer}>
         {[1, 2, 3, 4].map((optionNum) => (
-          <div key={optionNum} className={styles.formGroup}>
+          <div key={optionNum}>
             <label className={styles.label}>
               Option {optionNum}
               <input
@@ -43,14 +43,15 @@ const SelectField: React.FC<SelectFieldProps> = ({
           variant="contained"
           size="small"
           disabled={isSubmitted}
+          sx={{ mt: 2 }}
           onClick={() => {
             const options = [...(question.dropdownOptions || [])].filter(
               Boolean,
             );
             handleChange(index, 'dropdownOptions', options);
           }}
-          sx={{ mt: 3.5 }}
         >
+          Add
           <AddIcon />
         </Button>
       </div>
